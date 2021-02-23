@@ -1,3 +1,20 @@
+ > 本地运行方法:
+ - 安装ruby环境,确保gem和bundle都可以正常使用
+ - Gemfile中使用rubyChina的source使得项目可以加速
+ - 运行 `bundle install` 更新依赖
+ - 运行 `bundle exec jekyll serve` 使项目启动
+> 编辑文章
+编辑文章其实就是在_post文件中写markdown. 其中的头部可以看到有
+> 远程发布
+需要注意, 如果是folk来的文章的话,ci会默认禁用,需要手动到action里面启用一下.
+```
+--- 
+#各种配置
+--- 
+```
+这里的各种配置其实会当作yaml解析,所以如果出现各种问题只要当作yaml解析即可, 具体报错可以看修改后的实时console日志
+
+
 [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
 # Beautiful Jekyll
