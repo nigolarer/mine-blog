@@ -4,9 +4,21 @@
  - 运行 `bundle install` 更新依赖
  - 运行 `bundle exec jekyll serve` 使项目启动
 > 编辑文章
+
 编辑文章其实就是在_post文件中写markdown. 其中的头部可以看到有
+
 > 远程发布
+
 需要注意, 如果是folk来的文章的话,ci会默认禁用,需要手动到action里面启用一下.
+
+> 增量构建
+注意, 采用增量构建:
+```
+bundle exec jekyll serve  --incremental
+```
+只会更新已有的文件, 对于新增的文件会看不到, 此时就需要更新 `index.md` 比如增加空格等, 让构建重建index.html.
+或者使用命令 `touch index.md` 来更新一下它的文件时间即可触发. 如果不考虑构建时间问题的话, 可以不增加这个参数, 全量build即可. 
+
 ```
 --- 
 #各种配置
@@ -14,6 +26,13 @@
 ```
 这里的各种配置其实会当作yaml解析,所以如果出现各种问题只要当作yaml解析即可, 具体报错可以看修改后的实时console日志
 
+> 文章不显示问题
+
+jekyll默认是不展示未来的时间的文章的,但是本地预览的时候可能由于ruby的时区不正确导致当天的新文章不展示, 在_config.yml中增加
+```
+future: true
+```
+即可
 
 [![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
