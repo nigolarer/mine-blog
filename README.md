@@ -3,6 +3,38 @@
  - Gemfile中使用rubyChina的source使得项目可以加速
  - 运行 `bundle install` 更新依赖
  - 运行 `bundle exec jekyll serve` 使项目启动
+
+> plantuml支持
+
+由于我增加了plantuml的插件,因此需要本地安装plantuml以支持运行.
+
+首先, 保证本地有java环境
+
+其次, 下载plantuml.jar到某一个目录中, 我将该文件保存在了assets中以供拷贝.
+
+最后就是做windows的兼容支持, 由于原项目readme只说了linux环境的设置方法依赖于bash, 运行时会提示: 
+```
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/jekyll-plantuml-1.3.4/lib/jekyll-plantuml.rb:48:in `render': PlantUML error:  (RuntimeError)
+```
+检查源码L48:
+```
+ # jekyll-plantuml-1.3.4/lib/jekyll-plantuml.rb:48
+ system("plantuml -tsvg #{uml}") or raise "PlantUML error: #{super}"
+```
+这里其实是要在bin下新建一个`plantuml`的bash脚本才能跑不然就raise error了. 其中bash脚本:
+```
+#!/bin/bash
+
+java -jar /home/user/Downloads/plantuml.jar "$1" "$2"
+```
+因此,直接指定`plantuml.jar`的绝对路径即可, 如我本机将这一行改为:
+
+```
+    system("java -jar C:/Users/nigol/plantuml.jar -tsvg #{uml}") or raise "PlantUML error: #{super}"
+```
+即可完成本地预览. 
+
+
 > 编辑文章
 
 编辑文章其实就是在_post文件中写markdown. 其中的头部可以看到有
