@@ -11,4 +11,4 @@ tags: [显示器, 小工具]
 
 Twinkle Tray 就是这样一款软件, 可以直接拖动调节. 微软商店搜索下载即可. 
 
-![Crepe](/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray](/mine-blog/assets/img/202102/20210225134104-brightness.png)
