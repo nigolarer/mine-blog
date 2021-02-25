@@ -2,6 +2,8 @@
 layout: post
 title:  "启航"
 subtitle: 让我们开始吧
+gh-repo: nigolarer/mine-blog
+gh-badge: [star, fork, follow]
 comments: false
 ---
 欢迎来到我的blog

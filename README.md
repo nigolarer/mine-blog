@@ -1,3 +1,5 @@
+主题 forked from daattali/beautiful-jekyll
+
  > 本地运行方法:
  - 安装ruby环境,确保gem和bundle都可以正常使用
  - Gemfile中使用rubyChina的source使得项目可以加速
@@ -6,7 +8,9 @@
 
 > plantuml支持
 
-由于我增加了plantuml的插件,因此需要本地安装plantuml以支持运行.
+想要支持plantuml可以使用插件,但这些插件都不在`github-pages`的安全插件名单中, 因此无法使用, 一定要使用的话, 只能本地编译好后再直接上传静态页面到github才行,这导致无法随时随地的在线编辑, 过度依赖本地环境, 因此我放弃了.
+
+使用: https://github.com/yegor256/jekyll-plantuml 支持带有uml的post教程:
 
 首先, 保证本地有java环境
 
@@ -34,6 +38,18 @@ java -jar /home/user/Downloads/plantuml.jar "$1" "$2"
 ```
 即可完成本地预览. 
 
+post中的文章里参考plantuml: 
+
+```
+{% plantuml %}
+[First] - [Second]
+{% endplantuml %}
+```
+
+# 远程plantuml的失败记录
+我也尝试使用远程uml的方式:
+他们的gem工作原理是分析uml标签, 将内容请求远程的网站获取图片并缓存到缓存目录, 存放到渲染后的blog中. 但是其中一个获取到的文件格式有问题, 似乎是因为太久没有更新了. 另一个是jekyll的版本依赖与主题的版本不兼容导致报错, 因此这条路走不通了. 后面打算直接贴源码+截图或者看看是不是可以有iframe在线预览来曲线救国.
+另外, 意外发现: https://yuml.me/diagram/scruffy/class/draw 这个图的风格还挺不错的
 
 > 编辑文章
 

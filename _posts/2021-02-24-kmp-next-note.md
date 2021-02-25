@@ -3,6 +3,7 @@ layout: post
 title:  "[TODO]理解kmp中的next数组"
 subtitle: 这玩意儿还真是过段时间不看就忘了, 总是要从头再来, 所以干脆一次性理解到位
 comments: true
+tags: [算法, 字符串]
 ---
 
 # KMP算法
