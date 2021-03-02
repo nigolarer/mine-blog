@@ -47,7 +47,7 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme robbyrussel
 
- Import-Module git-aliases -DisableNameChecking
+Import-Module git-aliases -DisableNameChecking
 ```
 
 4.主题乱码问题. 我在配置一些主题后发现一些字符乱码, 和网友的效果图不一样, 于是设置了一个很朴素的主题, 绕过了这个问题. 主题名见上面的配置.
