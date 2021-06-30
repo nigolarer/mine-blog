@@ -2,7 +2,7 @@
 layout: post
 title: "vscode 安装 go 工具失败问题"
 subtitle: "如 gopls, gopkg, golint 等"
-thumbnail-img: /assets/img/202103/20210302170520-golang-cover.png
+thumbnail-img: ../assets/img/202103/20210302170520-golang-cover.png
 comments: true
 tags: [golang, vscode]
 ---

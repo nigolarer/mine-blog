@@ -2,7 +2,7 @@
 layout: post
 title: "将 PowerShell Oh-My-Zsh 化"
 subtitle: "美化和支持git快捷键"
-thumbnail-img: /assets/img/202102/20210226181309-powershell-beauty-cover.png
+thumbnail-img: ../assets/img/202102/20210226181309-powershell-beauty-cover.png
 comments: true
 tags: [powershell, git]
 ---

@@ -2,19 +2,19 @@
 layout: post
 title:  demo  Flake it till you make it
 subtitle: Excerpt from Soulshaping by Jeff Brown
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: ../assets/img/path.jpg
+thumbnail-img: ../assets/img/thumb.png
+share-img: ../assets/img/path.jpg
 tags: [books, test]
 ---
-![twinkle tray origin](/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray origin](../assets/img/202102/20210225134104-brightness.png)
 
 
-![twinkle tray with project name](/mine-blog/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray with project name](/mine-blog../assets/img/202102/20210225134104-brightness.png)
 
-![twinkle tray with site.url]({{ site.url }}/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray with site.url]({{ site.url }}../assets/img/202102/20210225134104-brightness.png)
 
-![twinkle tray with config]({{ image_base }}/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray with config]({{ image_base }}../assets/img/202102/20210225134104-brightness.png)
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
 

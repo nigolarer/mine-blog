@@ -2,7 +2,7 @@
 layout: post
 title:  "windows修改外接显示器亮度"
 subtitle: "微软商店 Twinkle Tray"
-thumbnail-img: /assets/img/202102/20210225134348-brightness-cover.png
+thumbnail-img: ../assets/img/202102/20210225134348-brightness-cover.png
 comments: true
 tags: [显示器, 小工具]
 ---
@@ -11,7 +11,7 @@ tags: [显示器, 小工具]
 
 Twinkle Tray 就是这样一款软件, 可以直接拖动调节. 微软商店搜索下载即可. 
 
-![twinkle tray](/assets/img/202102/20210225134104-brightness.png)
+![twinkle tray](../assets/img/202102/20210225134104-brightness.png)
 
 > 小问题
 
